@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->integer('year')->default(4);
             $table->string('course')->default('BSBE');
-            $table->string('shop_id')->unsigned();
+            $table->string('shop_id')->unsigned()->nullable();
             $table->string('password')->nullable();
             $table->string('provider');
             $table->string('provider_id')->unique();
